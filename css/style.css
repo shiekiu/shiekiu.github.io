@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/JosefinSlab/JosefinSlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Josefin Slab Italic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/JosefinSlab/JosefinSlab-Italic.ttf') format('truetype');
+}
+
+/*"Helvetica Neue", Helvetica, Arial, */
+body{
+    background: url("/img/subtle_grunge.png");
+    font-family: 'Josefin Slab', sans-serif;
+    font-size: 16px;
+}
+
+.title {
+    padding-left: 15%;
+    line-height: 1;
+    margin-top: 0;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    left: -8%;  	
+    color: #566F89;
+  	text-shadow: 2px 2px 0 #E4F1FF;
+}
+
+.sub-title {
+    margin-top:0;
+  	color: #566F89;
+  	text-shadow: 2px 2px 0 #E4F1FF;
+}
+
+.headportrait{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    /*border-radius: 50%;*/
+    border-top-left-radius:25%;
+    border-bottom-right-radius:25%;
+    -moz-box-shadow:0 0 20px rgba(255,227,132,0.8);
+    -webkit-box-shadow:0 0 20px rgba(255,227,132,0.8);
+    box-shadow:0 0 20px rgba(255,227,132,0.8);
+    /*src="/img/2.jpg" */
+    /*background: -moz-linear-gradient(top, red, green),url(../img/2.jpg);
+	background: -webkit-linear-gradient(top, red, green),url(../img/2.jpg);
+	background: -o-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)),url(../img/2.jpg);*/
+}
+
+section{
+    background-color: #ffffff;
+    padding: 30px 5%;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3),inset 0 0 10px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+section h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+
+.section-title {
+    padding: 20px 0;
+    padding-left: 15%;
+    line-height: 1;
+    margin-top: 0;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    left: -8%;  	
+    color: #566F89;
+  	text-shadow: 1px 1px 0 #E4F1FF;
+}
+
+/*.section-title:before {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*border-style: solid;*/
+    /*border-color: #060606 transparent transparent transparent;*/
+    /*left: 0;*/
+    /*bottom: -30px;*/
+    /*border-width: 30px 0 0 50px;*/
+    /*z-index: -1;*/
+/*}*/
+
+.section-title:after {
+    content: attr(data-icon);
+    font-family: 'FontAwesome';
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    top: 0;
+    left: 0;
+    padding: 20px 3%;
+    padding-left: 8%;
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.12);
+    text-shadow: 0px -1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+    .section-title {
+        padding: 20px 0;
+        padding-left: 24%;
+        line-height: 1;
+        margin-top: 0;
+        display: block;
+        text-transform: uppercase;
+        position: relative;
+        left: -8%;
+    }
+}
+
+
+
+/*[data-icon]:before {*/
+    /*font-family: 'FontAwesome';*/
+    /*content: attr(data-icon);*/
+/*}*/
+
+.section-sub-title {
+    margin-top:0;
+  	color: #566F89;
+  	text-shadow: 1px 1px 0 #E4F1FF;
+}
+
+p {
+    font-size: 18px;
+}
+/*.section-title:before {*/
+     /*border-color: #125387 transparent transparent transparent;*/
+/*}*/
+/*.section-title:before {*/
+    /*border-color: #133B5B transparent transparent transparent;*/
+/*}*/
+/*.section-title:after, em, .highlight, nav li a:hover, .portfolio-full .registred-tags a:hover, .testimonials {*/
+    /*background: #638BAB;*/
+/*}*/
+
+
+footer{
+
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu{
+    /*background-color: lightpink;*/
+    /*background: url("/img/bck.JPG");*/
+    margin-top: 150px;
+    border-top: 2px solid #000000;;
+
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.menu-bar{
+    font-size: 22px;
+    border-bottom: 2px solid #000000;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 5px;
+
+}
+
+.menu-bar li a {
+
+    /*让下划线消失*/
+    text-decoration: none;
+    display: block;
+    color: #777777;
+    cursor:pointer;
+    border-bottom: solid 1px transparent;
+}
+
+.menu-bar li a:hover,
+.menu-bar li .active{
+    background-color: transparent;
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
+
+
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
+
+
+    color: black;
+
+}
+
+header .avatar:after {
+
+}
+
+
+@media (min-width: 768px) {
+    .list-inline > li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+@media (min-width: 1200px) {
+    .list-inline > li a {
+
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+.nav-bar.split {
+    position: fixed;
+    /*right: 0;*/
+    /*left: 0;*/
+    top: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*.nav-bar.split {*/
+    /*-webkit-animation: show-menu 1s forwards;*/
+    /* Safari 4+ */
+    /*-moz-animation: show-menu 1s forwards;*/
+    /* Fx 5+ */
+    /*-o-animation: show-menu 1s forwards;*/
+    /* Opera 12+ */
+    /*animation: show-menu 1s forwards;*/
+    /* IE 10+, Fx 29+ */
+    /*position: fixed;*/
+    /*-webkit-transition: all 0s ease;*/
+    /*-moz-transition: all 0s ease;*/
+    /*-o-transition: all 0s ease;*/
+    /*transition: all 0s ease;*/
+    /*width: auto;*/
+    /*margin: auto;*/
+    /*left: 10%;*/
+    /*right: 10%;*/
+    /*z-index: 99999;*/
+    /*background-color: #cfc1ab;*/
+    /*border-radius: 0 0 10px 10px;*/
+    /*box-shadow: 0 5px 0 #c5b59b;*/
+    /*padding: 10px;*/
+/*}*/
+
+
+
+
+.about-border-line{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.about-img-border-line {
+margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.about-span {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.about-weixin-border-line {
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}

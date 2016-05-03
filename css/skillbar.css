@@ -1,0 +1,111 @@
+
+/*技能 小圈圈*/
+
+.skills-container {
+    margin-bottom: 20px;
+    float: left;
+}
+
+ul.skills-bar {
+    list-style: none;
+    margin: 0 auto;
+    height: 14px;
+    border: none;
+    float: left;
+    margin-top: 1px;
+    margin-right: 10px;
+    padding-left: 0px;
+}
+
+ul.skills-bar li {
+    float: left;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #E6E6E6;
+    border-radius: 50px;
+    margin-left: 4px;
+    background: #FFF;
+}
+
+
+.skilllevel1 {
+    -moz-animation-delay: 0s !important;
+    -webkit-animation-delay: 0s !important;
+}
+
+.skilllevel2 {
+    -moz-animation-delay: 0.25s !important;
+    -webkit-animation-delay: 0.25s !important;
+}
+
+.skilllevel3 {
+    -moz-animation-delay: 0.5 !important;
+    -webkit-animation-delay: 0.5s !important;
+}
+
+.skilllevel4 {
+    -moz-animation-delay: 0.75s !important;
+    -webkit-animation-delay: 0.75s !important;
+}
+
+.skilllevel5 {
+    -moz-animation-delay: 1s !important;
+    -webkit-animation-delay: 1s !important;
+}
+.skilllevel6 {
+    -moz-animation-delay: 1.25s !important;
+    -webkit-animation-delay: 1.25s !important;
+}
+.skilllevel7 {
+    -moz-animation-delay: 1.5s !important;
+    -webkit-animation-delay: 1.5s !important;
+}
+.skilllevel8 {
+    -moz-animation-delay: 1.75s !important;
+    -webkit-animation-delay: 1.75s !important;
+}
+.skilllevel9 {
+    -moz-animation-delay: 2s !important;
+    -webkit-animation-delay: 2s !important;
+}
+.skilllevel10 {
+    -moz-animation-delay: 2.25s !important;
+    -webkit-animation-delay: 2.25s !important;
+}
+.ball {
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    position: relative;
+    z-index: 100;
+    margin-left: -2px;
+    margin-top: -2px;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-animation: loading 1s linear forwards;
+    -webkit-animation: loading 1s linear forwards;
+}
+
+.skill-bar-pulse {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: 2px solid #000000;
+    box-shadow: 0 0 5px #000000;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -webkit-animation: skill-bar-pulse 1s ease-out;
+    -moz-animation: skill-bar-pulse 1s ease-out;
+}
+
+.language-content {
+    font-size: 20px;
+    margin-bottom: 20px;
+    float: left;
+}

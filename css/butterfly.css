@@ -1,0 +1,58 @@
+
+			.butterfly { width: 100%; height: 200px; margin: 0 auto; overflow: hidden;}
+			.butter1,.butter2,.butter3 {
+				position: relative;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+				display: none\9; *display: none;
+			}
+			.butter1 { -webkit-animation-name: butter1; -webkit-animation-duration: 30s; -webkit-transform: rotateZ(-30deg); }
+			.butter2 { -webkit-animation-name: butter2; -webkit-animation-duration: 40s; -webkit-transform: rotateZ(-30deg); }
+			.butter3 { -webkit-animation-name: butter3; -webkit-animation-duration: 50s; -webkit-transform: rotateZ(30deg); }
+			.butterfly1, .butterfly2, .butterfly3 {
+				position: absolute;
+				-webkit-animation-name: x-spin;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: ease-linear;
+			}
+			.butterfly1 { height: 36px; left: 4%; bottom: 60px; -webkit-animation-duration: 0.4s; }
+			.butterfly2 { height: 40px; left: 8%; bottom: 10px; -webkit-animation-duration: 0.4s; }
+			.butterfly3 { height: 40px; right: 6%; bottom: 10px; -webkit-animation-duration: 0.32s; }
+
+			@-webkit-keyframes x-spin {
+				0%		{ -webkit-transform: rotateX(0deg); }
+				20%		{ -webkit-transform: rotateX(80deg); }
+				40%		{ -webkit-transform: rotateX(130deg); }
+				50%		{ -webkit-transform: rotateX(180deg); }
+				60%		{ -webkit-transform: rotateX(210deg); }
+				80%		{ -webkit-transform: rotateX(270deg); }
+				100%	{ -webkit-transform: rotateX(360deg); }
+			}
+			@-webkit-keyframes butter1 {
+				0%		{ opacity: 0; }
+				10%		{ left: 16%; bottom: 80px; opacity: 1; }
+				20%		{ left: 24%; bottom: 45px; }
+				30%		{ left: 40%; bottom: 15px; }
+				60%		{ left: 72%; bottom: -5px; }
+				70%		{ left: 80%;; bottom: 30px; }
+				80%		{ left: 84%; bottom: 0px; opacity: 0.6; }
+				100%	{ left: 90%; bottom: 40px; opacity: 0; }
+			}
+			@-webkit-keyframes butter2 {
+				0%		{ opacity: 0; }
+				10%		{ left: 12%; bottom: 40px; opacity: 1; }
+				40%		{ left: 18%; bottom: 20px; }
+				50%		{ left: 36%; bottom: 0px; }
+				60%		{ left: 60%; bottom: -10px; }
+				80%		{ left: 64%; bottom: 20px; opacity: 0.6; }
+				100%	{ left: 86%; bottom: 30px; opacity: 0; }
+			}
+			@-webkit-keyframes butter3 {
+				0%		{ opacity: 0; }
+				10%		{ right: 16%; bottom: 30px; opacity: 1; }
+				20%		{ right: 20%; bottom: 10px; }
+				40%		{ right: 40%; bottom: 0px; }
+				60%		{ right: 62%; bottom: -10px; }
+				70%		{ right: 70%; bottom: 10px; opacity: 0.6; }
+				100%	{ right: 84%; bottom: 60px; opacity: 0; }
+			}
